@@ -13,7 +13,7 @@ public class FileWriterTest {
 //        BufferedWriter output = new BufferedWriter(outputWriter);
 
         //Forma compacta de escrever o código acima
-        BufferedWriter output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("src/FileWriter-Result.txt")));
+        BufferedWriter output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("src/main/resources/FileWriter - Charles Amorim.txt")));
 
         output.write("Teste de escrita"); // write não pula linha
         output.newLine(); // pula linha

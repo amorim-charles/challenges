@@ -14,7 +14,7 @@ public class FileReaderTest {
 //        BufferedReader input = new BufferedReader(inputReader);
 
         //Forma compacta de escrever o códio acima
-        BufferedReader input = new BufferedReader(new InputStreamReader(new FileInputStream("src/FileWriter-Result.txt")));
+        BufferedReader input = new BufferedReader(new InputStreamReader(new FileInputStream("src/main/resources/FileWriter - Charles Amorim.txt")));
 
         // Lê apenas a primeira linha
         String fileResult = input.readLine();

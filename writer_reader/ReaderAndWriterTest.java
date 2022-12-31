@@ -7,10 +7,10 @@ public class ReaderAndWriterTest {
         //Antes de executar esse teste rode a classe FileWriter para criar o arquivo que será lido aqui
 
         //Modelo de leitura
-        BufferedReader input = new BufferedReader(new InputStreamReader(new FileInputStream("src/FileWriter-Result.txt")));
+        BufferedReader input = new BufferedReader(new InputStreamReader(new FileInputStream("src/main/resources/FileWriter - Charles Amorim.txt")));
 
         //Modelo de escrita
-        BufferedWriter output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("src/FileWriter-Update.txt")));
+        BufferedWriter output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("src/main/resources/FileWriterUpdate - Charles Amorim.txt")));
 
         String line = input.readLine();
         output.write("Update feita pela classe FileReaderAndWriter\n");
