@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <title>Robotron 2000</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <section class="robotron">
+            <img class="robo" src="img/nomad.svg" alt="Robotron" id="robo">
+            <!-- <figcaption class="titulo">ROBOTRON <br>2000</figcaption> -->
+        </section>
+
+        <section class="box estatisticas">
+            <div class="estatistica">
+                <p class="estatistica-titulo">Precision</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-statistic="precision">0</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Resistance</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-statistic="resistance">0</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Energy</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-statistic="energy">0</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Velocity</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-statistic="velocity">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipamentos">
+            <form action="" class="montador">
+                <div class="box montador-conteudo">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Weapon</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-operator="-" data-part="weapon">-</buttom>
+                            <input type="text" class="controle-contador" value="0" data-count>
+                            <buttom class="controle-ajuste" data-operator="+" data-part="weapon">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Drone</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-operator="-" data-part="drone">-</buttom>
+                            <input type="text" class="controle-contador" value="0" data-count>
+                            <buttom class="controle-ajuste" data-operator="+" data-part="drone">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Items</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-operator="-" data-part="items">-</buttom>
+                            <input type="text" class="controle-contador" value="0" data-count>
+                            <buttom class="controle-ajuste" data-operator="+" data-part="items">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Physicist</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-operator="-" data-part="physicist">-</buttom>
+                            <input type="text" class="controle-contador" value="0" data-count>
+                            <buttom class="controle-ajuste" data-operator="+" data-part="physicist">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Squad</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-operator="-" data-part="squad">-</buttom>
+                            <input type="text" class="controle-contador" value="0" data-count>
+                            <buttom class="controle-ajuste" data-operator="+" data-part="squad">+</buttom>
+                        </div>
+                        <input type="submit" value="Iniciar " class="producao" id="producao">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
